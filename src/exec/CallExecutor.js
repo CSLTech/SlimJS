@@ -97,7 +97,7 @@ function CallExecutor(state){
     }
 
     function isPromise(obj) {
-        return obj.then && typeof obj.then === 'function';
+        return obj && obj.then && typeof obj.then === 'function';
     }
 
     function isOptionalFunction(funName){
